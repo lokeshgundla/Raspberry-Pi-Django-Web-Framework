@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}A Team BLU organization{% endblock %}
+
+
+
+
+
+{% block content %}
+
+
+<br/>
+<center><h1>{{ name }}</h1>
+
+<div class="card" style="width: 50rem;">
+  <img src="{% static 'images/hacker.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Origin Unknown</h5>
+    <p class="card-text">Projects UNITED</p>
+    <a href="{% url 'about' %}" class="btn btn-dark">About US</a>
+  </div>
+</div>
+
+</center>
+
+{% endblock %}

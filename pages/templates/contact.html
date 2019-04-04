@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Contacts{% endblock %}
+
+
+
+{% block content %}
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<center>
+
+<div class="row">
+<div class="column">
+<div class="card" style="width: 20rem;">
+  <img src="{% static 'images/hacker.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Lokesh Reddy Baddela</h5>
+    <p class="card-text">Proffessional Sleeper Cell</p>
+    <a href="{% url 'contact_lb' %}" class="btn btn-primary">Carry</a>
+  </div>
+</div>
+</div>
+
+
+
+<div class="column">
+<div class="card" style="width: 20rem;">
+  <img src="{% static 'images/hacker.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Nithin Varma Gorinta</h5>
+    <p class="card-text">Public Relations Officer</p>
+    <a href="{% url 'contact_n' %}" class="btn btn-primary">Support</a>
+  </div>
+</div>
+</div>
+
+
+<div class="column">
+<div class="card" style="width: 20rem;">
+  <img src="{% static 'images/hacker.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Lokesh Reddy Gundla</h5>
+    <p class="card-text">Human Resource Officer</p>
+    <a href="{% url 'contact_lg' %}" class="btn btn-primary">Strength</a>
+  </div>
+</div>
+</div>
+
+
+<strong>{{badella}}</strong>
+</div>
+
+</center>
+
+{% endblock %}
